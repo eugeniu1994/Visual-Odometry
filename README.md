@@ -1,5 +1,6 @@
 # Visual-Odometry
-
+This is an example of visual localization based on mono camera sensor.
+Intrinsic parameters (K matrix is known) .
 1. Detect feature descriptors (harris corner, SIFT)
 2. TRack the features in 2 consecutive images, using optical flow.
 3. Estimate Essential matrix (E) between points correspondences, using RANSAC model fitting.
