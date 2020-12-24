@@ -239,7 +239,7 @@ if __name__ == '__main__':
                               markerfacecolor='r', markersize=7))
     position_axes.legend(handles=legend_elements, facecolor='white', framealpha=1)
 
-    #vid_odom.detectFromImages(position_axes, use_ground_truth=use_ground_truth, see_tracking = see_tracking)
+    vid_odom.detectFromImages(position_axes, use_ground_truth=use_ground_truth, see_tracking = see_tracking)
 
-    cap = cv2.VideoCapture('dataset/videoplayback.mp4')
-    vid_odom.detectFromVideo(position_axes, cap, see_tracking = see_tracking)
+    #cap = cv2.VideoCapture('dataset/videoplayback.mp4')
+    #vid_odom.detectFromVideo(position_axes, cap, see_tracking = see_tracking)
