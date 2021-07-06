@@ -1,4 +1,5 @@
-# Visual-Odometry
+# Monocular-Visual-Odometry
+See 'Monocular_odometry.py'
 This is an example of visual localization based on mono camera sensor.
 Intrinsic parameters (K matrix is known) .
 1. Detect feature descriptors (harris corner, SIFT)
@@ -9,3 +10,18 @@ Intrinsic parameters (K matrix is known) .
 
 
 <img src="visual.gif" />
+
+#Stereo-Visual-odometry
+See 'Stereo_odometry.py'
+Camera intrinsic and extrinsic parameters are known
+1. Detect features at Left_img_tk, Right_img_tk, Left_img_tk+1, Right_img_tk+1.
+2. Undistort the images
+3. Estimate features and track them across 4 images
+4. Compute the sparse disparity map and estimate the 3D location of the points at time t and t+1
+5. In the FrontEnd, estimate the initial transformation between the pointclouds at time t and t+1 using the Iterative closest point cloud (ICP) method.
+6. Construct a PoseGraph and optimize the poses.
+7. Plot the result
+
+<img src="stereo.gif" />
+
+Bundle Adjustment example, to optimize camera poses, 3D points locations and extrinsic parameters. See 'BA.py' 
