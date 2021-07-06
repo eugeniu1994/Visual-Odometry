@@ -11,7 +11,9 @@ Intrinsic parameters (K matrix is known) .
 
 <img src="visual.gif" />
 
-#Stereo-Visual-odometry
+
+# Stereo-Visual-odometry
+
 See 'Stereo_odometry.py'
 Camera intrinsic and extrinsic parameters are known
 1. Detect features at Left_img_tk, Right_img_tk, Left_img_tk+1, Right_img_tk+1.
