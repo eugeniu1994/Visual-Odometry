@@ -26,4 +26,4 @@ Camera intrinsic and extrinsic parameters are known
 
 <img src="stereo.gif" />
 
-Bundle Adjustment example, to optimize camera poses, 3D points locations and extrinsic parameters. See 'BA.py' 
+Bundle Adjustment example, to optimize camera poses, 3D points locations and intrinsic parameters. See 'BA.py' 
